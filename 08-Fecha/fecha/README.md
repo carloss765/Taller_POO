@@ -1,18 +1,50 @@
-## Getting Started
+# Fecha
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Crea una clase Fecha con atributos para el día, el mes y el año de la fecha.
+Incluye, al menos, los siguientes métodos:
 
-## Folder Structure
+-Constructor predeterminado con el 1-1-1900 como fecha por defecto.
 
-The workspace contains two folders by default, where:
+-Constructor parametrizado con día, mes y año.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+-leer(): pedirá al usuario el día (1 a 31), el mes (1 a 12) y el año (1900 a 2050).
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+-bisiesto(): indicará si el año de la fecha es bisiesto o no.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+-diasMes(int): devolverá el número de días del mes que se le indique
+(para el año de la fecha).
 
-## Dependency Management
+-valida(): comprobará si la fecha es correcta (entre el 1-1-1900 y el 31-12-2050);
+si el día no es correcto, lo pondrá a 1; si el mes no es correcto, lo pondrá a 1;
+y si el año no es correcto, lo pondrá a 1900. Será un método auxiliar (privado).
+Este método se llamará en el constructor parametrizado y en leer().
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+-Accedentes y mutadores.
+
+-corta(): mostrará la fecha en formato corto (02-09-2003).
+
+-diasTranscurridos(): devolverá el número de días transcurridos
+desde el 1-1-1900 hasta la fecha.
+
+-diaSemana(): devolverá el día de la semana de la fecha
+(0 para domingo, ..., 6 para sábado). El 1-1-1900 fue domingo.
+
+-larga(): mostrará la fecha en formato largo, empezando por el día de la semana
+(martes 2 de septiembre de 2003).
+
+-fechaTras(long): hará que la fecha sea la correspondiente a haber transcurrido
+los días que se indiquen desde el 1-1-1900.
+
+-diasEntre(Fecha): devolverá el número de días entre la fecha y la proporcionada.
+
+-siguiente(): pasará al día siguiente.
+
+-anterior(): pasará al día anterior.
+
+-copia(): devolverá un clon de la fecha.
+
+-igualQue(Fecha): indica si la fecha es la misma que la proporcionada.
+
+-menorQue(Fecha): indica si la fecha es anterior a la proporcionada.
+
+-mayorQue(Fecha): indica si la fecha es posterior a la proporcionada.
