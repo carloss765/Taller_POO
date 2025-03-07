@@ -1,18 +1,25 @@
-## Getting Started
+# Cafeteria
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Desarrolla una clase Cafetera con atributos \_capacidadMaxima (la cantidad máxima
+de café que puede contener la cafetera) y \_cantidadActual (la cantidad actual de café
+que hay en la cafetera). Implementa, al menos, los siguientes métodos:
 
-## Folder Structure
+-Constructor predeterminado: establece la capacidad máxima en 1000 (c.c.)
+y la actual en cero (cafetera vacía).
 
-The workspace contains two folders by default, where:
+-Constructor con la capacidad máxima de la cafetera; inicializa la cantidad actual de
+café igual a la capacidad máxima.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+-Constructor con la capacidad máxima y la cantidad actual. Si la cantidad actual es
+mayor que la capacidad máxima de la cafetera, la ajustará al máximo.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+-Accedentes y mutadores.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+-llenarCafetera(): pues eso, hace que la cantidad actual sea igual a la capacidad.
 
-## Dependency Management
+-servirTaza(int): simula la acción de servir una taza con la capacidad indicada.
+Si la cantidad actual de café “no alcanza” para llenar la taza, se sirve lo que quede.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+-vaciarCafetera(): pone la cantidad de café actual en cero.
+
+-agregarCafe(int): añade a la cafetera la cantidad de café indicada.
