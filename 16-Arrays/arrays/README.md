@@ -1,18 +1,11 @@
-## Getting Started
-
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Array234
+<p>
+Desarrolla una clase Array234 que maneje un array de dimensiones 2 x 3 x 4. La clase
+tendrá estas características:
+Ingeniería Técnica Informática de Sistemas
+Ejercicios Clases y Objetos — Pág. 6
+1- El array de 2 x 3 x 4 será un atributo de la clase.
+2-El constructor de la clase inicializará el array aleatoriamente, utilizando la función
+Math.random().
+3-Un método max_min() mostrará en la pantalla los valores máximos y mínimos del
+array, así como los índices de los componentes que los almacenan. <p>
