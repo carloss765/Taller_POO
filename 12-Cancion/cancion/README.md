@@ -1,18 +1,22 @@
-## Getting Started
+# Cancion
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Desarrolla una clase Cancion con los siguientes atributos:
 
-## Folder Structure
+-titulo: una variable String que guarda el título de la canción.
 
-The workspace contains two folders by default, where:
+-autor: una variable String que guarda el autor de la canción.
+y los siguientes métodos:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+-Cancion(String, String): constructor que recibe como parámetros el título y el
+autor de la canción (por este orden).
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+-Cancion(): constructor predeterminado que inicializa el título y el autor a cadenas
+vacías.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+-dameTitulo(): devuelve el título de la canción.
 
-## Dependency Management
+-dameAutor(): devuelve el autor de la canción.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+-ponTitulo(String): establece el título de la canción.
+
+-ponAutor(String): establece el autor de la canción
