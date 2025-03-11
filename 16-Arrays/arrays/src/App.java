@@ -4,5 +4,6 @@ public class App {
         array234.printArray(); // Imprimir el array para verificar el contenido (opcional)
         array234.max_min(); // Mostrar los valores máximos y mínimos del array y sus índices
         
+        // Hecho por Brahian
     }
 }
