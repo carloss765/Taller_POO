@@ -1,18 +1,21 @@
-## Getting Started
+# CD
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Desarrolla una clase CD con los siguientes atributos:
 
-## Folder Structure
+-canciones: un array de objetos de la clase Cancion.
 
-The workspace contains two folders by default, where:
+-contador: la siguiente posición libre del array canciones.
+y los siguientes métodos:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+-CD(): constructor predeterminado (creará el array canciones).
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+-numeroCanciones(): devuelve el valor del contador de canciones.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+-dameCancion(int): devuelve la Cancion que se encuentra en la posición indicada.
 
-## Dependency Management
+-grabaCancion(int, Cancion): cambia la Cancion de la posición indicada por la
+nueva Cancion proporcionada.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+-agrega(Cancion): agrega al final del array la Cancion proporcionada.
+
+-elimina(int): elimina la Cancion que se encuentra en la posición indicada.

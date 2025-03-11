@@ -1,18 +1,16 @@
-## Getting Started
+# Libro
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Crea una clase Libro que modele la información que se mantiene en una biblioteca
+sobre cada libro: título, autor (usa la clase Persona), ISBN, páginas, edición, editorial ,
+lugar (ciudad y país) y fecha de edición (usa la clase Fecha). La clase debe proporcionar
+los siguientes servicios: accedentes y mutadores, método para leer la información y
+método para mostrar la información. Este último método mostrará la información del
+libro con este formato:
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Título: Introduction to Java Programming
+3a. edición
+Autor: Liang, Y. Daniel
+ISBN: 0-13-031997-X
+Prentice-Hall, New Jersey (USA), viernes 16 de noviembre de
+2001
+784 páginas
