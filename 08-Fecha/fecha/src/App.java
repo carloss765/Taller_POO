@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class App {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Fecha fecha = new Fecha(1, 1, 1900); // Fecha inicial: 1-1-1900
+        Fecha fecha = new Fecha(1, 1, 1900); // Fecha inicial por defecto
 
         int opcion;
         do {
@@ -24,7 +24,7 @@ public class App {
 
             switch (opcion) {
                 case 1:
-                    System.out.println("Fecha actual: " + fecha.toString());
+                    System.out.println("Fecha actual: " + fecha);
                     break;
 
                 case 2:
@@ -39,14 +39,14 @@ public class App {
                     System.out.print("Ingrese el número de días a avanzar: ");
                     long diasAvanzar = scanner.nextLong();
                     fecha.fechaTras(diasAvanzar);
-                    System.out.println("Nueva fecha: " + fecha.toString());
+                    System.out.println("Nueva fecha: " + fecha);
                     break;
 
                 case 5:
                     System.out.print("Ingrese el número de días a retroceder: ");
                     long diasRetroceder = scanner.nextLong();
-                    fecha.fechaTras(-diasRetroceder); // Usamos negativo para retroceder
-                    System.out.println("Nueva fecha: " + fecha.toString());
+                    fecha.fechaTras(-diasRetroceder); // Se usa negativo para retroceder
+                    System.out.println("Nueva fecha: " + fecha);
                     break;
 
                 case 6:
@@ -57,18 +57,18 @@ public class App {
                     break;
 
                 case 7:
-                    fecha.siguiente();
-                    System.out.println("Fecha al día siguiente: " + fecha.toString());
+                    fecha.fechaTras(1);
+                    System.out.println("Fecha al día siguiente: " + fecha);
                     break;
 
                 case 8:
-                    fecha.anterior();
-                    System.out.println("Fecha al día anterior: " + fecha.toString());
+                    fecha.fechaTras(-1);
+                    System.out.println("Fecha al día anterior: " + fecha);
                     break;
 
                 case 9:
                     Fecha copiaFecha = fecha.copia();
-                    System.out.println("Copia de la fecha creada: " + copiaFecha.toString());
+                    System.out.println("Copia de la fecha creada: " + copiaFecha);
                     break;
 
                 case 10:
